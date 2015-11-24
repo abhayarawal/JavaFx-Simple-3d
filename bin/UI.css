@@ -1,0 +1,125 @@
+@CHARSET "ISO-8859-1";
+
+@font-face {
+    font-family: Icomoon;
+    src: url('icomoon.ttf');
+}
+
+.root
+{
+	-fx-background-color: #3c3c3c;
+	-fx-border-radius: 5;
+	-fx-border-color: #000000;
+	-fx-border-width: 1.2;
+	-fx-background-radius: 5;
+}
+
+.top
+{
+	-fx-background-color: 
+		linear-gradient(#525252 0%, #3c3c3c 40%);
+	-fx-padding: 2 3 0 7;
+}
+
+.button, .toggle-button
+{
+	-fx-background-color: 
+		linear-gradient(rgba(69,69,69,0.8) 0%, #212121 20%);
+	-fx-text-fill: #949494;
+	-fx-border-radius: 4;
+	-fx-font-weight: bold;
+	-fx-border-width: 1.2;
+	-fx-border-color: #000000;
+	-fx-padding: 1 7 1 7;
+	-fx-background-radius: 4;
+}
+
+.button:hover, .toggle-button:hover
+{
+	-fx-border-color: #7a7a7a;
+}
+
+.button:pressed, .toggle-button:pressed, .toggle-button:selected
+{
+	-fx-border-color: #000000;
+	-fx-background-color: rgba(0,0,0,0), linear-gradient(#683102 0%, #f17000 20%);
+	-fx-text-fill: #0e0e0e;
+}
+
+.icomoon, .icomoon-btn
+{
+	-fx-font-family: 'Icomoon';
+}
+
+.icomoon-btn
+{
+	-fx-padding: 0;
+	-fx-pref-width: 45;
+	-fx-pref-height: 45;
+	-fx-font-size: 20;
+}
+
+.set, .scroll-pane
+{
+	-fx-text-fill: #949494;
+	-fx-border-width: 2;
+	-fx-border-radius: 5;
+	-fx-padding: 5 10 10 10;
+	-fx-border-color: rgba(24,24,24,0.7);
+	-fx-background-radius: 5;
+	-fx-background-color: linear-gradient(to bottom, #3d3d3d, #252525);
+	-fx-fill-width: true;
+}
+
+.scroll-pane:focused {
+    -fx-background-insets: 0, 0, 1, 2;
+}
+
+.scroll-bar, .scroll-pane > .viewport {
+   -fx-background-color: transparent;
+}
+
+.scroll-bar .increment-button, .scroll-bar .decrement-button
+{
+	-fx-opacity: 0;
+}
+
+.scroll-bar .thumb
+{
+	-fx-background-color: #212121;
+	-fx-background-insets: 4;
+	-fx-background-radius: 8px;	
+}
+
+.label
+{
+	-fx-text-fill: #949494;
+	-fx-font-weight: bold;
+}
+
+.text-field
+{
+	-fx-background-color: #474747;
+	-fx-text-fill: #949494;
+	-fx-border-width: 1;
+	-fx-padding: 1 7 1 7;
+	-fx-border-radius: 3;
+	-fx-border-color: rgba(24,24,24,0.7);
+	-fx-background-radius: 3;
+	-fx-font-weight: bold;
+}
+
+.text-field:focused
+{
+	-fx-background-color: #565656;
+}
+
+.end
+{
+	-fx-padding: 0 3 2 7;
+}
+
+.endLbl
+{
+	-fx-text-fill: #ffffff;
+}
